@@ -1,1 +1,13 @@
-kkk
+Lottery Scheduling
+
+Summary:
+    Propose Lottery scheduling which allocate resources 
+    according to proportion of lottery tickets(or currency) tasks have.
+
+Strength:
+    Propose general resource management with simple implementation.
+    Solve starvation problem.
+    Prove its strength with various experiments to prove its efficiency.
+    
+Weekness:
+    
