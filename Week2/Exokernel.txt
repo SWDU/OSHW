@@ -1,1 +1,8 @@
-aaa
+Existing OS have problem of high level abstraction that occurs degrading application performance
+and disturbing the functionality because all apps must share single abstractions.
+Exokernel reduce the overhead by yielding the power 
+to untrusted applications modifying their abstractions.
+Exokernel manage these applications with secure binding, 
+visible resource revocation and abort protocol.
+Exokernel makes applications more intelligently using harware to their own use.
+Therefore, exokernel achieves high performance and able to apply various application.
