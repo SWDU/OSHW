@@ -1,0 +1,10 @@
+
+
+Authors say that tasks these days have shorter life time. 
+Small requests with low latency.
+Low latency cause low throughput by degrading core utilization.
+This paper propose Arachne, implements core aware thread management by core-based API.
+Applications know cores each one has.
+Applications use cores more compactly by using multiplex requests on long-running threads.
+Minimize cache misses.
+Authors prove that arachne works well on various throughput and latency experiments.
