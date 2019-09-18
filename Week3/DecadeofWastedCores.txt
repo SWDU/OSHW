@@ -1,3 +1,6 @@
 
 This paper's contirubution is found some bugs on Linux scheduling codes and fix them and make tools to check these bugs.
-
+Although runnable threads exists, some bugs on scheduler leave cores idle.
+Authors propose new tools to check these bugs and visualize the data.
+Main strength of this work is find the bugs that cannot be detected by tools exists 
+and new understanding the cause of bugs.
