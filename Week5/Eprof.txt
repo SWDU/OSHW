@@ -1,0 +1,8 @@
+This paper presents eprof.
+eprof is the energy profiler for Android/Windows mobile smartphone apps.
+Using eprof, authors reduce power consumption of four apps.
+eprof use last-trigger as accounting policy because of asynchronous power behavior which occurs often in smartphone apps.
+Authors shows that popular apps' major energy consumption is from I/O components and propose bundles for energy accounting.
+
+This paper shows the problem of accounting energy consumption in application on smarthphone environments well.
+And prove proposed tool, eprof, with new accounting information bundle to easily understand energy consumption is effectively works on experiments to several apps.

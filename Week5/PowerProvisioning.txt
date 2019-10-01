@@ -1,0 +1,11 @@
+
+Because under-utilized facility means more the fraction cost of the facility grows, 
+effective power provisioning is needed to maximize the use of power capacity in datacenters. 
+This paper analyse critical power of the large scale workloads on actual datacenter. 
+1. Power gap between actual-maximum and theoretical-peak is not small.(up to 40%) 
+2. Dynymic power management efficiently use machines and prevent overload. 
+3. CPU voltage/frequency scaling can reduce power consumption. 
+Authors argue that it is important to consider not only peak performance levels but also across the activity range.
+
+This paper's strength is the first power usage reserch of very large scale systems. 
+But I think it is difficult to research this topic with insufficient equipments. 
