@@ -1,0 +1,6 @@
+This paper introduce MOSBENCH and scalability issue of MOSBENCH related kernel.
+Authors says that the scalability issue is not on CPU cycles, but on shared resource like DRAM bandwidth limit, cache coherence cost, network card bandwidth limit and lock etc.
+Proposed designs improving scalability issue aims to reduce contention and cost of shared resource.
+Analyze of MOSBENCH applications is the strength of this paper. They show the root of scalability issue and their little modifications of kernel and app can be the solution.
+But the experiments of this paper might be weakness. In experiments, authors used tmpfs(im-memory file system) to avoid delayed time by I/O or buffer cache for input files to show scalable issue.
+This is not exactly real workload environment. With disk I/O and Amdahl's law, the modifications of this paper might be not scalable.

@@ -1,0 +1,7 @@
+Observe synchronization effect for cache coherence, atomic operation, locks on different types of architectures.
+    Cross-socket sharing should be avoided to avoid latency spikes compare to inter-socket latency.
+    Although threads under same socket situation, LLC might incur cross-socket communication.
+    Loads and stores are expensive enough compare to atomic operations on contention.
+    Locking scheme should be used carefully under HW platform and expected workload.
+    Message passing can reduce sharing with high performance under contention. But low performance under low contention.
+Propose SSYNC, the cross-platform synchronization suit.

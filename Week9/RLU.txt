@@ -1,0 +1,7 @@
+RCU shortage
+    1. Complex to use
+    2. Optimized for small number of writers. because RCU relies on single atomic pointer.
+    3. Latency spike by waiting for readers
+RLU use object-level write-log per thread and global clock for switching multiple copy. writes can defer committing until conflicts occurred.
+RLU can be compatible with RCU interface.
+Therefore, RLU achives its strength by increased prarlleism and lower cost of programming effort.
