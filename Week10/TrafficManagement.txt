@@ -1,0 +1,5 @@
+
+Although previous researches focus on avoiding remote access,
+congestion on memory controllers and interconnects caused by memory traffic is the main problem for performancei because of evolution of modern NUMA hardware.
+Thus, in this paper, authors propose some techniques like migration and interleaving to solve this problem.
+These techniques also improve the local node access.
