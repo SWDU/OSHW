@@ -1,0 +1,16 @@
+
+Traditional page-based virtual memory management was motivated by scarce physical memory.
+But, because of the increased size of capable memory in these days, the question is occured.
+Using the virtual memory is still a good idea?
+Authors analyze the property of applications with big-memory footprints and show that 
+page-based virtual memory provide little benefits and high cost.
+From this question and analyze, they propose 'direct segment' for big-memory server workloads 
+and proved its correctness and benefits.
+
+The benefit of direct segment is for enabling fast and efficient address translation. 
+They simply mapping the contiguous virtual address range to contiguous physical address range with HW support. 
+
+They mention that using large page can decrease TLB misses 
+but has limitation that using large page cannot scale with memory size.
+
+Direct segment technique can avoid TLB misses but this makes unsuitable environments for concurrently running processes.

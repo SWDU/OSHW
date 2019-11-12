@@ -1,0 +1,22 @@
+
+Authors points out some problems like latency, memory footprint, fragmentaion, etc.. 
+that current huge page management has.
+
+First, Latency problem from cleaning pages and fragmentation. 
+Linux zero pages before return. So, zero large pages have more cost.
+Other problem related to latency is cost of allocate large contiguous memory(2MB). 
+OS should compact memory to allocate large page when memory is fragmented.
+
+Second, increased memory footprint.
+Although huge page can reduce TLB misses, 
+some applications using huge pages cannot fully utilize the huge pages. 
+Greedy and aggresive allocation on linux can occur unexpected effect for application's memory usage.
+
+Third, increased fragmentation.
+And unfir performance.
+
+Ingen monitors space and time with vitvector.
+Ingen supports fast page faults for low latency.
+Ingen use utilization-based promotion for reduce memory footprint
+and use proactive batched compaction to reduce memory fragmentation.
+Ingen supports balance page sharing with performance.
