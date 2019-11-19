@@ -1,0 +1,11 @@
+
+Authors point out that protocols for application-level atomic update are very inefficient because they must use fsync() calls to prevent data loss or corruption.
+Thus, system support for transaction is needed to get high performance for this type of applications.
+They propose TxFS builds on ext4 file system's well-tested journaling mechanism.
+TxFS support APIs for applications, fs_tx_begin(), fs_tx_commit() and fs_tx_abort().
+Authors mentioned that TxFS can achieve some file system optimizations such as
+eliminate tmp durable files while atomic update, group commit with batching update 
+to achieve efficient allocation of file system data structures, eliminating redundant IO and
+consolidate ordering from durability.
+TxFS can achieve performance improvement without losing consistency by adopting well-tested journaling mechanism.
+But there are limitations to journal size is limited and only support transactions from single process.

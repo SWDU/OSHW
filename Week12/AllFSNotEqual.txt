@@ -1,0 +1,7 @@
+Authors say that application level crash-consistency protocols have vulnerabilities on modern file systems.
+Because there are active debates were occured how the underlying file systems are behave and this means that many people do not know how exactly it works.
+Therefore, they mentioned that checking for the persistence properties of file system is needed and made BOB and ALICE for checking them.
+BOB generates the trace of block operations of file systems and reorder them for exploring possible crash states.
+ALICE analyze application level crash consistency. ALICE boils down update protocol to file system related syscalls.
+They analyze application requirements atomicity across syscalls, syscall atomicity and ordering dependency by using BOB and ALICE and found several vulneralities.
+Based on their analyze, they suggest ext3-fast to reduce fsync() latency by only peristing synced target file.
