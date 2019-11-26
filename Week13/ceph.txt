@@ -1,0 +1,8 @@
+In previous solutions, centralized file system like NFS, 
+have significant problem on scalablility. 
+Ceph decouples data and metadata operations by generating functions 
+rather than file allocation tables and use pseudo-random distribution function named CRUSH. 
+And they use dynamic distributed metadata management bvased on Dynamic Subtree partitioning.
+Ceph achieves three properties, scalability, performance and reliability.
+Using CRUSH, improved data safety is achieved.
+RADOS and EBOFS leverages OSDs to manage data operations and provides superior perrformance.

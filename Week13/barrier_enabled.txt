@@ -1,0 +1,9 @@
+Authors mentioned that in the era of HDD, seek and rotational delay justify the exsistence of 
+I/O stack reordering and using transfer-and-flush.
+However, in the era of SSD, seek and rotational delay are not existi and flash storage 
+provides the cache barrier command to allow the host to control the persist order. 
+Therefore, they mentioned that we should re-think the storage reordering way.
+They said that overhead of guaranteeing the storage order in modern IO stack needs high cost 
+storage flush.
+They implement fbarrier() and fdatabarrier() that guarantees the ordering of writes 
+without high cost flush to persistent storage. 
