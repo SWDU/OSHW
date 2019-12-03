@@ -1,0 +1,8 @@
+Existing schedulers aims to achieve fairness have problem achieving responsiveness. 
+Because assigning timeslice approach may cause long period before replenished next timeslice. 
+And fair queueing schedulers targets only for equal progress of completed work. 
+Existing schedulers have problems of restricted parallelism and deceptive idleness. 
+FlashFQ scheduler achieves fairness and high responsiveness for Flash-based SSDs. 
+FlashFQ exploit restricted Flash I/O parallelism by throttled dispatch while maintaining fairness. 
+And employs I/O anticipation to solve deceptive idleness problem.
+
